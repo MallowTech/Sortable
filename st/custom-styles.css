@@ -1,0 +1,80 @@
+body {
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+}
+#cards-box {
+    padding-right: 5px;
+}
+#cards-box .panel,
+.media-bg {
+    background-color: white;
+    box-shadow: 0 0 12px lightgrey !important;
+    border: 0;
+    border-radius: 0;
+}
+#cards-box .panel-heading {
+    padding: 25px 20px;
+    background-color: #fafafa;
+    color: #a5a5a5;
+    font-weight: 100 !important;
+}
+.hide-card {
+    display: none;
+}
+.show-card {
+    display: block;
+}
+.drag-here {
+    padding: 45px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dashed lightgrey;
+    color: grey;
+}
+.drag-handle {
+    cursor: pointer;
+    float: right;
+    margin-top: -10px;
+}
+.drag-handle img {
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+}
+.drag-handle img:hover {
+    border: 1px solid #139ec7;
+}
+
+
+/*Cards*/
+#cards div {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+    color: grey;
+}
+#cards div:last-chil {
+    border-bottom: 0;
+}
+#cards div:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+    color: #139ec7;
+}
+#cards img {
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+}
+#cards div:hover img {
+    border: 1px solid #139ec7;
+}
+
+
+@media(max-width:767px) {
+    #cards {
+        text-align: center;
+    }
+}
+@media(min-width:768px) {
+    #cards img {
+        margin-right: 10px;
+    }
+}

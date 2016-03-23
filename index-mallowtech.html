@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="/st/og-image.png" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+
+    <!--    Googe Font - Open Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+    <link href="st/custom-styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <!--        Card System-->
+        <div id="card-system" class="row">
+            <!--            Card Box-->
+            <div class="col-xs-9" id="cards-box">
+                <div class="drag-here">Drag and Drop Content Cards to Create your Page</div>
+            </div>
+            <!--            Cards-->
+            <div class="col-xs-3">
+                <div id="cards" class="media-bg">
+                    <div data-card="#media"><img src="st/icon-media.png"><span class="hidden-xs">Media</span>
+                    </div>
+                    <div data-card="#text"><img src="st/icon-media.png"><span class="hidden-xs">Text</span>
+                    </div>
+                    <div data-card="#contact"><img src="st/icon-media.png"><span class="hidden-xs">Contact</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Card panel - Templates-->
+    <div id="media" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                <h3 class="panel-title">MEDIA</h3>
+            </div>
+            <div class="panel-body">
+                MEDIA CARD
+            </div>
+        </div>
+
+    </div>
+    <div id="text" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                <h3 class="panel-title">TEXT</h3>
+            </div>
+            <div class="panel-body">
+                TEXT CARD
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                <h3 class="panel-title">CONTACT</h3>
+            </div>
+            <div class="panel-body">
+                CONTACT CARD
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <script src="Sortable.js"></script>
+    <script src="st/app-mallowtech.js"></script>
+
+</body>
+
+</html>
