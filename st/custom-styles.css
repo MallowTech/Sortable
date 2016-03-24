@@ -84,7 +84,72 @@ body {
 .panel-title-controls img:hover {
     border: 1px solid #139ec7;
 }
+.cards-frame-th {
+    height: 200px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.cards-frame-th i {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.cards-frame-controls table,
+.cards-frame-description {
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.cards-frame-description {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+.cards-frame-controls table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.cards-frame-controls table tr td {
+    width: 50%;
+}
+.cards-frame-controls table tr td a {
+    padding: 8px 10px;
+    color: #139ec7;
+    display: block;
+}
+.cards-frame-controls table tr td a:hover {
+    background-color: #139ec7;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cards-frame-controls table tr td:last-child {
+    border-left: 1px solid #efefef;
+}
+.cards-frame-controls table tr td:last-child a {
+    color: #e93939;
+}
+.cards-frame-controls table tr td:last-child a:hover {
+    background-color: #e93939;
+    color: white;
+}
 
+.card-no-contents {
+    text-align: center;
+    color: #b9b9b9;
+    height: 80px;
+    padding-top: 50px;
+}
 
 /*Card Chips*/
 #cards-title .card-chip {
@@ -148,5 +213,9 @@ body {
 @media(min-width:768px) {
     #cards-title img {
         margin-right: 10px;
+    }
+    .cards-frame-description {
+        height: 100px;
+        overflow-y: scroll;
     }
 }
