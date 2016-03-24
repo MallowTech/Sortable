@@ -2,21 +2,54 @@ body {
     background-color: #eeeeee;
     font-family: 'Open Sans', sans-serif;
 }
-#cards-box {
+#cards {
     padding-right: 5px;
 }
-#cards-box .panel,
-.media-bg {
+#cards .panel,
+.media-bg,
+#cards .card-chip {
     background-color: white;
     box-shadow: 0 0 12px lightgrey !important;
     border: 0;
     border-radius: 0;
 }
-#cards-box .panel-heading {
-    padding: 25px 20px;
+#cards .panel-heading {
+    padding: 25px 15px;
     background-color: #fafafa;
     color: #a5a5a5;
-    font-weight: 100 !important;
+    border-bottom: 1px solid #efefef;
+}
+#cards .panel-heading h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+#cards .panel-footer {
+    background-color: transparent;
+    border-top: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#cards .panel-footer .btn {
+    background-color: white;
+    color: #139ec7;
+    border: 2px solid #139ec7;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+#cards .panel-footer .btn:hover{
+    background-color: #139ec7;
+    color: white;
+}
+#cards .card-chip {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    
 }
 .hide-card {
     display: none;
@@ -31,50 +64,89 @@ body {
     border: 1px dashed lightgrey;
     color: grey;
 }
+.panel-title-controls {
+    float: right;
+    margin-top: -7px;    
+}
 .drag-handle {
     cursor: pointer;
-    float: right;
-    margin-top: -10px;
 }
-.drag-handle img {
+.panel-title-controls img {
     border-radius: 50%;
     border: 1px solid #bfbfbf;
 }
-.drag-handle img:hover {
+.panel-title-controls .drag-handle img {
+    margin-left: 15px;
+}
+.drop-down img {
+    margin-right: 13px;
+}
+.panel-title-controls img:hover {
     border: 1px solid #139ec7;
 }
 
 
-/*Cards*/
-#cards div {
+/*Card Chips*/
+#cards-title .card-chip {
     padding: 15px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #efefef;
     color: grey;
 }
-#cards div:last-chil {
+#cards-title .card-chip:last-child {
     border-bottom: 0;
 }
-#cards div:hover {
+#cards-title .card-chip:hover {
     background-color: #eeeeee;
     cursor: pointer;
     color: #139ec7;
 }
-#cards img {
+#cards-title img {
     border-radius: 50%;
     border: 1px solid #eeeeee;
 }
-#cards div:hover img {
+#cards-title div:hover img {
     border: 1px solid #139ec7;
 }
 
 
+@media(max-width:450px) {
+    #cards-title .card-chip {
+        padding: 10px 5px;
+    }
+    .panel-title-controls {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+        float: none;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 5px;
+        padding-bottom: 15px;
+    }
+    #cards .panel-heading {
+        padding-bottom: 5px;
+    }
+    #cards .panel-heading h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+    #cards .panel-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #cards .panel-footer .btn {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
 @media(max-width:767px) {
-    #cards {
+    #cards-title {
         text-align: center;
     }
 }
 @media(min-width:768px) {
-    #cards img {
+    #cards-title img {
         margin-right: 10px;
     }
 }

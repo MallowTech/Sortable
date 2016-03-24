@@ -7,7 +7,7 @@
     <meta property="og:image" content="/st/og-image.png" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--    Googe Font - Open Sans-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -30,20 +30,48 @@
     <br>
     <br>
     <div class="container">
-        <!--        Card System-->
-        <div id="card-system" class="row">
-            <!--            Card Box-->
-            <div class="col-xs-9" id="cards-box">
+        <!-- Cards Box -->
+        <div id="cards-box" class="row">
+            <!-- Card Box -->
+            <div class="col-xs-9 col-lg-10" id="cards">
                 <div class="drag-here">Drag and Drop Content Cards to Create your Page</div>
+                <div id="media" class="show-card">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title-controls">
+                        <a class="drop-down" role="button" data-toggle="collapse" href="#mediaContents" aria-expanded="true" aria-controls="mediaContents"><img src="st/icon-drop-up.png"></a>
+                        <a href=""><img src="st/icon-edit.png"></a>
+                        <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                            </span>
+                            <h3 class="panel-title">Media</h3>
+                        </div>
+                        <div class="collapse in" id="mediaContents">
+                            <div class="panel-body">
+                                MEDIA CARD
+                            </div>
+                            <div class="panel-footer">
+                                <a href="" class="btn btn-primary">Add Photo</a>
+                                <a href="" class="btn btn-primary">Add Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!--            Cards-->
-            <div class="col-xs-3">
-                <div id="cards" class="media-bg">
-                    <div data-card="#media"><img src="st/icon-media.png"><span class="hidden-xs">Media</span>
+            <!-- Cards Title -->
+            <div class="col-xs-3 col-lg-2">
+                <div id="cards-title" class="media-bg">
+                    <div data-card="#media" class="card-chip"><img src="st/icon-media.png"><span class="hidden-xs">Media</span>
                     </div>
-                    <div data-card="#text"><img src="st/icon-media.png"><span class="hidden-xs">Text</span>
+                    <div data-card="#text" class="card-chip"><img src="st/icon-text.png"><span class="hidden-xs">Text</span>
                     </div>
-                    <div data-card="#contact"><img src="st/icon-media.png"><span class="hidden-xs">Contact</span>
+                    <div data-card="#contact" class="card-chip"><img src="st/icon-contact.png"><span class="hidden-xs">Contact</span>
+                    </div>
+                    <div data-card="#document" class="card-chip"><img src="st/icon-document.png"><span class="hidden-xs">Document</span>
+                    </div>
+                    <div data-card="#links" class="card-chip"><img src="st/icon-links.png"><span class="hidden-xs">Links</span>
+                    </div>
+                    <div data-card="#category" class="card-chip"><img src="st/icon-category.png"><span class="hidden-xs">Category</span>
                     </div>
                 </div>
 
@@ -52,15 +80,21 @@
     </div>
 
 
-    <!--    Card panel - Templates-->
+    <!--    Cards-->
     <div id="media" class="hide-card">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <span class="drag-handle"><img src="st/icon-drag.png"></span>
-                <h3 class="panel-title">MEDIA</h3>
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#mediaContents" aria-expanded="true" aria-controls="mediaContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Media</h3>
             </div>
-            <div class="panel-body">
-                MEDIA CARD
+            <div class="collapse in" id="mediaContents">
+                <div class="panel-body ">
+                    MEDIA CARD
+                </div>
             </div>
         </div>
 
@@ -68,22 +102,85 @@
     <div id="text" class="hide-card">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <span class="drag-handle"><img src="st/icon-drag.png"></span>
-                <h3 class="panel-title">TEXT</h3>
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#textContents" aria-expanded="true" aria-controls="textContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Text</h3>
             </div>
-            <div class="panel-body">
-                TEXT CARD
+            <div class="collapse in" id="textContents">
+                <div class="panel-body ">
+                    TEXT CARD
+                </div>
             </div>
         </div>
     </div>
     <div id="contact" class="hide-card">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <span class="drag-handle"><img src="st/icon-drag.png"></span>
-                <h3 class="panel-title">CONTACT</h3>
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#contactContents" aria-expanded="true" aria-controls="contactContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Contact</h3>
             </div>
-            <div class="panel-body">
-                CONTACT CARD
+            <div class="collapse in" id="contactContents">
+                <div class="panel-body ">
+                    CONTACT CARD
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="document" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#documentContents" aria-expanded="true" aria-controls="documentContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Document</h3>
+            </div>
+            <div class="collapse in" id="documentContents">
+                <div class="panel-body ">
+                    DOCUMENT CARD
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="links" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#linksContents" aria-expanded="true" aria-controls="linksContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Links</h3>
+            </div>
+            <div class="collapse in" id="linksContents">
+                <div class="panel-body ">
+                    LINKS CARD
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="category" class="hide-card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="panel-title-controls">
+                    <a class="drop-down" role="button" data-toggle="collapse" href="#categoryContents" aria-expanded="true" aria-controls="categoryContents"><img src="st/icon-drop-up.png"></a>
+                    <a href=""><img src="st/icon-edit.png"></a>
+                    <span class="drag-handle"><img src="st/icon-drag.png"></span>
+                </span>
+                <h3 class="panel-title">Category</h3>
+            </div>
+            <div class="collapse in" id="categoryContents">
+                <div class="panel-body ">
+                    CATEGORY CARD
+                </div>
             </div>
         </div>
     </div>
@@ -93,6 +190,7 @@
 
 
     <script src="Sortable.js"></script>
+    <!--    Customised by MallowTech-->
     <script src="st/app-mallowtech.js"></script>
 
 </body>
